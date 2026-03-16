@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LUME - Your digital sanctuary for mental well-being. Therapeutic paths, guided meditations, and a personalized emotional journal.">
+    <meta name="keywords" content="mental well-being, meditation, therapeutic paths, emotional journal, mental health">
+    <meta name="author" content="LUME">
+    <meta property="og:title" content="LUME - Breathe. Focus. Move forward.">
+    <meta property="og:description" content="Your digital sanctuary for mental well-being">
+    <meta property="og:type" content="website">
+    <title>LUME - Your Digital Sanctuary for Mental Well-being</title>
+    <link rel="icon" href="LUME_icon(v3).png" type="image/png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="LUME_icon(v3).png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- =========== INÍCIO DA BARRA DE NAVEGAÇÃO =========== -->
+    <header class="header" role="banner">
+        <!-- Main container aligning all items -->
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            
+            <!-- 1. Logo -->
+            <div class="logo">
+                <a href="#" aria-label="LUME home">
+                    <img src="LUME_icon(v3).png" alt="LUME logo" />
+                    LUME
+                </a>
+            </div>
+
+            <!-- 2. Navigation Links (Centered) -->
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="#" role="menuitem" aria-label="Therapeutic paths">THERAPEUTIC PATHS</a></li>
+                <li role="none"><a href="#" role="menuitem" aria-label="Guided meditations">MEDITATION</a></li>
+                <li role="none"><a href="#" role="menuitem" aria-label="Emotional journal">EMOTIONAL JOURNAL</a></li>
+                <li role="none"><a href="#" role="menuitem" aria-label="Personalized paths">PERSONALIZED PATHS</a></li>
+            </ul>
+
+            <!-- 3. Action Buttons (Right) -->
+            <div class="nav-buttons" id="navButtons">
+                <a href="#" class="btn-login" id="loginBtn" aria-label="Sign in">Login</a>
+                <a href="#" class="btn-signin" id="signInBtn" aria-label="Create account">Sign In</a>
+                <!-- User Profile (Hidden by default) -->
+                <div class="user-profile" id="userProfile" style="display: none;">
+                    <div class="user-avatar" id="userAvatar">
+                        <img src="pfp_pattern.png" alt="User Avatar">
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name" id="userName">User</span>
+                        <button class="btn-logout" id="logoutBtn" aria-label="Logout">
+                            Logout
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hamburger Menu Button for Small Screens -->
+            <div class="hamburger">
+                <button class="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+            <ul class="mobile-nav-links">
+                <li><a href="#" aria-label="Therapeutic paths">THERAPEUTIC PATHS</a></li>
+                <li><a href="#" aria-label="Guided meditations">MEDITATION</a></li>
+                <li><a href="#" aria-label="Emotional journal">EMOTIONAL JOURNAL</a></li>
+                <li><a href="#" aria-label="Personalized paths">PERSONALIZED PATHS</a></li>
+                <li><a href="#" class="btn-login" aria-label="Sign in">Login</a></li>
+                <li><a href="#" class="btn-signin" aria-label="Create account">Sign In</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- =========== FIM DA BARRA DE NAVEGAÇÃO =========== -->
+
+
+    <!-- Conteúdo principal -->
+    <main role="main">
+        <!-- Hero -->
+        <section class="main-content section" aria-labelledby="hero-title">
+            <div class="container">
+                <h1 class="main-title" id="hero-title">Breathe. Focus.</h1>
+                <h2 class="main-subtitle">Move forward.</h2>
+                <p class="hero-description">Your digital sanctuary for mental well-being</p>
+            </div>
+        </section>
+
+        <!-- Carousel -->
+        <section class="section carousel-section" aria-label="Image gallery">
+            <div class="image-carousel" role="region" aria-label="Image carousel">
+                <div class="image image1">
+                    <img src="Img1.png" alt="Image representing mental well-being and inner peace" loading="lazy">
+                </div>
+                <div class="image image2">
+                    <img src="Img2.png" alt="Image representing meditation and mindfulness" loading="lazy">
+                </div>
+                <div class="image image3">
+                    <img src="Img3.png" alt="Image representing personal growth and self-discovery" loading="lazy">
+                </div>
+                <!-- Duplicates for infinite loop -->
+                <div class="image image1">
+                    <img src="Img1.png" alt="Image representing mental well-being and inner peace" loading="lazy">
+                </div>
+                <div class="image image2">
+                    <img src="Img2.png" alt="Image representing meditation and mindfulness" loading="lazy">
+                </div>
+                <div class="image image3">
+                    <img src="Img3.png" alt="Image representing personal growth and self-discovery" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section about-section" aria-labelledby="about-title">
+            <div class="container">
+                <header class="about_title">
+                    <h2 id="about-title">Who we are?</h2>
+                </header>
+                <div class="about">
+                    <p>Modern life is fast-paced and, at times, overwhelming. Between the pressure to be productive and the uncertainties of the future, finding a moment of peace can feel like a luxury. We understand. LUME was born from this understanding: that caring for your mind isn't a luxury, but the foundation for everything. We are your digital sanctuary, a safe space where you can pause, breathe, and reconnect with your true self. Through therapeutic paths, guided meditations, and self-discovery tools, we offer a gentle way back to your center, at your own pace and in your own time.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- What we do -->
+        <section class="section services-section" aria-labelledby="services-title">
+            <div class="container">
+                <header class="whatwedo">
+                    <h2 id="services-title">What we do?</h2>
+                </header>
+                <div class="whatwedotext">
+                    <p>At LUME, we create digital mental health tools designed to fit into your life, offering practical and gentle support whenever you need it. We help you build a self-care routine through:</p>
+                    <ul class="services-list">
+                        <li><strong>Therapeutic paths</strong>
+                            <p>Follow audio-guided journeys and interactive exercises on topics like anxiety, sleep, and focus. Each path is a safe step toward your well-being.</p>
+                        </li>
+                        <li><strong>Guided meditations</strong>
+                            <p>Find calm pauses in your day. Our 5 to 20-minute meditations help silence mental noise and find clarity.</p>
+                        </li>
+                        <li><strong>Emotional Journal</strong>
+                            <p>A safe space to record and understand your feelings. Identify patterns and celebrate your progress with our intelligent journal.</p>
+                        </li>
+                        <li><strong>Personalized paths</strong>
+                            <p>Based on your journal entries, LUME suggests content and practices tailored to your current challenges and goals.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section testimonials-section" aria-labelledby="testimonials-title">
+            <div class="container">
+                <header class="whoislumefor">
+                    <h2 id="testimonials-title">Who is LUME for?</h2>
+                </header>
+                <div class="whoislumefortext">
+                    <h3>What Our Users Says?</h3>
+                    <blockquote class="testimonial">
+                        <p>"The Emotional Journal changed how I process my feelings. Within a few weeks, I started to understand my anxiety triggers. LUME has become my daily sanctuary."</p>
+                        <cite>- Mariana V., Lawyer</cite>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p>"I could never truly meditate until I found the Guided Paths. The calm voice and clear instructions helped me build a habit that is genuinely reducing my stress at work."</p>
+                        <cite>- Lucas P., Developer</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section cta-section" aria-labelledby="cta-title">
+            <div class="container">
+                <header class="CTA"> 
+                    <h2 id="cta-title">Ready to breathe?</h2>
+                </header>
+                <div class="CTAText">
+                    <p>Sign up and start your journey to mental well-being.</p>
+                </div>
+                <div class="btn">
+                    <a href="#" class="btn-signin btn-large" aria-label="Create account and start journey">Sign In</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-container">
+            <!-- Left Column -->
+            <div class="footer-left">
+                <div class="footer-lume">
+                    <h3>LUME</h3>
+                </div>
+                <nav aria-label="Footer links">
+                    <ul class="footer-links">
+                        <li><a href="#" aria-label="Therapeutic paths">THERAPEUTIC PATHS</a></li>
+                        <li><a href="#" aria-label="Guided meditations">MEDITATION</a></li>
+                        <li><a href="#" aria-label="Emotional journal">EMOTIONAL JOURNAL</a></li>
+                        <li><a href="#" aria-label="Personalized paths">PERSONALIZED PATHS</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="company">
+                <div class="company-title">
+                    <h3>COMPANY</h3>
+                </div>
+                <ul>
+                    <li>About Us</li>
+                    <li>Blog</li>
+                    <li>Carrers</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+
+            <div class="resources">
+                <div class="resources-title">
+                    <h3>RESOURCES</h3>
+                </div>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Help Center</li>
+                    <li>Community</li>
+                </ul>
+            </div>
+
+            <!-- Right Column -->
+            <div class="footer-right">
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                </div>
+                <div class="footer-social" aria-label="Social media">
+                    <a href="#" aria-label="Facebook"><img src="facebook.png" alt="Facebook" loading="lazy"></a>
+                    <a href="#" aria-label="Instagram"><img src="insta.png" alt="Instagram" loading="lazy"></a>
+                    <a href="#" aria-label="X (Twitter)"><img src="X.png" alt="X" loading="lazy"></a>
+                    <a href="#" aria-label="LinkedIn"><img src="linkedin.png" alt="LinkedIn" loading="lazy"></a>
+                    <a href="#" aria-label="YouTube"><img src="yt_icon.png" alt="YouTube" loading="lazy"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2024 LUME. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Login -->
+    <div class="modal-overlay" id="loginModal" aria-hidden="true">
+        <div class="modal" role="dialog" aria-labelledby="login-modal-title" aria-modal="true">
+            <div class="modal-header">
+                <h2 id="login-modal-title">Login</h2>
+                <button class="modal-close" id="closeLoginModal" aria-label="Close modal">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <form class="modal-form" id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" required placeholder="Enter your password">
+                </div>
+                <button type="submit" class="btn-submit">Login</button>
+                <div class="form-message" id="loginMessage"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de SignIn -->
+    <div class="modal-overlay" id="signInModal" aria-hidden="true">
+        <div class="modal" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+            <div class="modal-header">
+                <h2 id="modal-title">Create Account</h2>
+                <button class="modal-close" id="closeModal" aria-label="Close modal">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <form class="modal-form" id="signInForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Create a strong password">
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password">
+                </div>
+                <button type="submit" class="btn-submit">Sign In</button>
+                <div class="form-message" id="formMessage"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
