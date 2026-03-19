@@ -659,7 +659,6 @@ p {
     height: 500px;
     object-fit: cover;
     display: block;
-    transition: transform var(--transition-slow);
     border-radius: 16px;
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
@@ -667,7 +666,7 @@ p {
 }
 
 .image:hover img {
-    transform: scale(1.05);
+    /* Sem efeito de transformação */
 }
 
 /* =========== SEÇÕES DE CONTEÚDO =========== */
