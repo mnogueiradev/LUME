@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clínica LUME - Encontre equilíbrio emocional com acompanhamento psicológico profissional. Agende sua consulta e comece sua transformação.">
+    <meta name="keywords" content="psicologia, terapia, saúde mental, ansiedade, depressão, autoestima, bem-estar emocional, clínica psicológica">
+    <meta name="author" content="LUME">
+    <meta property="og:title" content="Clínica LUME - Encontre seu equilíbrio emocional">
+    <meta property="og:description" content="Acompanhamento psicológico profissional para transformar sua vida">
+    <meta property="og:type" content="website">
+    <title>Clínica LUME - Psicologia e Terapia Profissional</title>
+    <link rel="icon" href="LUME_icon(v3).png" type="image/png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="LUME_icon(v3).png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- =========== INÍCIO DA BARRA DE NAVEGAÇÃO =========== -->
+    <header class="header" role="banner">
+        <!-- Main container aligning all items -->
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            
+            <!-- 1. Logo -->
+            <div class="logo">
+                <a href="#" aria-label="LUME home">
+                    <img src="LUME_icon(v3).png" alt="LUME logo" />
+                    LUME
+                </a>
+            </div>
+
+            <!-- 2. Navigation Links (Centered) -->
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="#beneficios" role="menuitem" aria-label="Benefícios">Benefícios</a></li>
+                <li role="none"><a href="#como-funciona" role="menuitem" aria-label="Como funciona">Como funciona</a></li>
+                <li role="none"><a href="#sobre" role="menuitem" aria-label="Sobre a clínica">Sobre</a></li>
+                <li role="none"><a href="#depoimentos" role="menuitem" aria-label="Depoimentos">Depoimentos</a></li>
+            </ul>
+
+            <!-- 3. Action Buttons (Right) -->
+            <div class="nav-buttons" id="navButtons">
+                <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta." class="btn-whatsapp" id="whatsappBtn" aria-label="Falar no WhatsApp">Falar no WhatsApp</a>
+                <a href="#agendar" class="btn-agendar" id="agendarBtn" aria-label="Agendar consulta">Agendar Consulta</a>
+                <!-- User Profile (Hidden by default) -->
+                <div class="user-profile" id="userProfile" style="display: none;">
+                    <div class="user-avatar" id="userAvatar">
+                        <img src="pfp_pattern.png" alt="User Avatar">
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name" id="userName">User</span>
+                        <button class="btn-logout" id="logoutBtn" aria-label="Logout">
+                            Logout
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hamburger Menu Button for Small Screens -->
+            <div class="hamburger">
+                <button class="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+            <ul class="mobile-nav-links">
+                <li><a href="#beneficios" aria-label="Benefícios">Benefícios</a></li>
+                <li><a href="#como-funciona" aria-label="Como funciona">Como funciona</a></li>
+                <li><a href="#sobre" aria-label="Sobre a clínica">Sobre</a></li>
+                <li><a href="#depoimentos" aria-label="Depoimentos">Depoimentos</a></li>
+                <li><a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta." class="btn-whatsapp" aria-label="Falar no WhatsApp">Falar no WhatsApp</a></li>
+                <li><a href="#agendar" class="btn-agendar" aria-label="Agendar consulta">Agendar Consulta</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- =========== FIM DA BARRA DE NAVEGAÇÃO =========== -->
+
+
+    <!-- Conteúdo principal -->
+    <main role="main">
+        <!-- Hero -->
+        <section class="main-content section" aria-labelledby="hero-title">
+            <div class="container">
+                <h1 class="main-title" id="hero-title">Encontre <span class="highlight">equilíbrio emocional</span> e transforme sua vida</h1>
+                <h2 class="main-subtitle">Acompanhamento psicológico profissional para superar ansiedade, depressão e encontrar o bem-estar que você merece</h2>
+                <p class="hero-description">Cuidar da sua mente não é um luxo, é o primeiro passo para uma vida mais plena e feliz. Na Clínica LUME, oferecemos um espaço seguro e acolhedor para sua jornada de autoconhecimento e transformação.</p>
+            </div>
+        </section>
+
+        <!-- Carousel -->
+        <section class="section carousel-section" aria-label="Image gallery">
+            <div class="image-carousel" role="region" aria-label="Image carousel">
+                <div class="image image1">
+                    <img src="Img1.png" alt="Image representing mental well-being and inner peace" loading="lazy">
+                </div>
+                <div class="image image2">
+                    <img src="Img2.png" alt="Image representing meditation and mindfulness" loading="lazy">
+                </div>
+                <div class="image image3">
+                    <img src="Img3.png" alt="Image representing personal growth and self-discovery" loading="lazy">
+                </div>
+                <!-- Duplicates for infinite loop -->
+                <div class="image image1">
+                    <img src="Img1.png" alt="Image representing mental well-being and inner peace" loading="lazy">
+                </div>
+                <div class="image image2">
+                    <img src="Img2.png" alt="Image representing meditation and mindfulness" loading="lazy">
+                </div>
+                <div class="image image3">
+                    <img src="Img3.png" alt="Image representing personal growth and self-discovery" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section about-section" aria-labelledby="about-title">
+            <div class="container">
+                <header class="about_title">
+                    <h2 id="about-title">Por que escolher a Clínica LUME?</h2>
+                </header>
+                <div class="about">
+                    <p>A vida moderna pode ser avassaladora e, às vezes, desafiadora. Entre pressões profissionais, incertezas e a busca constante por equilíbrio, cuidar da saúde mental se torna essencial. Entendemos profundamente essa jornada.</p><p>Na Clínica LUME, oferecemos mais do que terapia - oferecemos um parceria para sua transformação. Nossa equipe de psicólogos qualificados está pronta para acolher você com empatia e profissionalismo, criando um espaço seguro onde você pode ser autêntico e encontrar o caminho para seu bem-estar emocional.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- What we do -->
+        <section class="section services-section" aria-labelledby="services-title">
+            <div class="container">
+                <header class="whatwedo">
+                    <h2 id="services-title">Como podemos ajudar você?</h2>
+                </header>
+                <div class="whatwedotext">
+                    <p>Na Clínica LUME, oferecemos acompanhamento psicológico profissional adaptado às suas necessidades, criando um caminho seguro e acolhedor para sua transformação emocional.</p>
+                    <ul class="services-list">
+                        <li><strong>Terapia Individual</strong>
+                            <p>Sessões personalizadas para trabalhar ansiedade, depressão, estresse e questões de autoestima. Um espaço seguro para você se reconectar consigo mesmo.</p>
+                        </li>
+                        <li><strong>Acompanhamento Contínuo</strong>
+                            <p>Suporte constante entre sessões, com exercícios práticos e ferramentas para aplicar no dia a dia o que aprendemos juntos.</p>
+                        </li>
+                        <li><strong>Avaliação Psicológica</strong>
+                            <p>Processo completo para entender suas necessidades e criar um plano terapêutico eficaz e personalizado para seus objetivos.</p>
+                        </li>
+                        <li><strong>Abordagem Integrativa</strong>
+                            <p>Combinamos técnicas da Terapia Cognitivo-Comportamental, Psicanálise e abordagens humanistas para um tratamento completo.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section testimonials-section" aria-labelledby="testimonials-title">
+            <div class="container">
+                <header class="whoislumefor">
+                    <h2 id="testimonials-title">Histórias de transformação real</h2>
+                </header>
+                <div class="whoislumefortext">
+                    <h3>Depoimentos de nossos pacientes</h3>
+                    <blockquote class="testimonial">
+                        <p>"Cheguei na Clínica LUME sentindo-me perdida, com crises de ansiedade constantes. Através da terapia, aprendi a entender minhas emoções e desenvolver ferramentas para lidar com os desafios do dia a dia. Hoje me sinto mais confiante e em paz comigo mesma."</p>
+                        <cite>- Ana Carolina, 32 anos, Advogada</cite>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p>"A depressão me afastou de tudo o que eu amava. Com o acompanhamento da Clínica LUME, redescobri o sentido da vida e aprendi a cultivar a autoestima. O profissionalismo e o cuidado da equipe fizeram toda a diferença no meu processo de recuperação."</p>
+                        <cite>- Roberto Mendes, 45 anos, Empresário</cite>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p>"Como profissional de TI, vivia sob pressão constante. As sessões de terapia me ajudaram a encontrar equilíbrio entre trabalho e vida pessoal, além de desenvolver inteligência emocional. Hoje lido melhor com o estresse e tomo decisões mais alinhadas com meus valores."</p>
+                        <cite>- Marcos Silva, 28 anos, Desenvolvedor</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section cta-section" aria-labelledby="cta-title">
+            <div class="container">
+                <header class="CTA"> 
+                    <h2 id="cta-title">Pronto para começar sua transformação?</h2>
+                </header>
+                <div class="CTAText">
+                    <p>Dê o primeiro passo para uma vida mais equilibrada e feliz. Nossa equipe está pronta para acolher você com profissionalismo e empatia.</p>
+                </div>
+                <div class="btn">
+                    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta." class="btn-whatsapp btn-large" aria-label="Falar no WhatsApp e agendar consulta">Falar no WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-container">
+            <!-- Left Column -->
+            <div class="footer-left">
+                <div class="footer-lume">
+                    <h3>LUME</h3>
+                </div>
+                <nav aria-label="Footer links">
+                    <ul class="footer-links">
+                        <li><a href="#sobre" aria-label="Sobre a clínica">Sobre</a></li>
+                        <li><a href="#beneficios" aria-label="Benefícios">Benefícios</a></li>
+                        <li><a href="#como-funciona" aria-label="Como funciona">Como funciona</a></li>
+                        <li><a href="#depoimentos" aria-label="Depoimentos">Depoimentos</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="company">
+                <div class="company-title">
+                    <h3>COMPANY</h3>
+                </div>
+                <ul>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </div>
+
+            <div class="resources">
+                <div class="resources-title">
+                    <h3>RESOURCES</h3>
+                </div>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Comunidade</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Column -->
+            <div class="footer-right">
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><strong>WhatsApp:</strong> (11) 99999-9999</p>
+                    <p><strong>Email:</strong> contato@clinicalume.com.br</p>
+                    <p><strong>Horário:</strong> Seg-Sex: 8h-20h</p>
+                </div>
+                <div class="footer-social" aria-label="Social media">
+                    <a href="#" aria-label="Facebook"><img src="facebook.png" alt="Facebook" loading="lazy"></a>
+                    <a href="#" aria-label="Instagram"><img src="insta.png" alt="Instagram" loading="lazy"></a>
+                    <a href="#" aria-label="X (Twitter)"><img src="X.png" alt="X" loading="lazy"></a>
+                    <a href="#" aria-label="LinkedIn"><img src="linkedin.png" alt="LinkedIn" loading="lazy"></a>
+                    <a href="#" aria-label="YouTube"><img src="yt_icon.png" alt="YouTube" loading="lazy"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2024 Clínica LUME - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Login -->
+    <div class="modal-overlay" id="loginModal" aria-hidden="true">
+        <div class="modal" role="dialog" aria-labelledby="login-modal-title" aria-modal="true">
+            <div class="modal-header">
+                <h2 id="login-modal-title">Login</h2>
+                <button class="modal-close" id="closeLoginModal" aria-label="Close modal">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <form class="modal-form" id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" required placeholder="Enter your password">
+                </div>
+                <button type="submit" class="btn-submit">Login</button>
+                <div class="form-message" id="loginMessage"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de SignIn -->
+    <div class="modal-overlay" id="signInModal" aria-hidden="true">
+        <div class="modal" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+            <div class="modal-header">
+                <h2 id="modal-title">Create Account</h2>
+                <button class="modal-close" id="closeModal" aria-label="Close modal">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <form class="modal-form" id="signInForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Create a strong password">
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password">
+                </div>
+                <button type="submit" class="btn-submit">Sign In</button>
+                <div class="form-message" id="formMessage"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
