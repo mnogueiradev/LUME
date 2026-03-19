@@ -629,7 +629,7 @@ p {
     display: flex;
     width: 200%;
     animation: slideRight 20s linear infinite;
-    height: 400px;
+    height: 520px;
     animation-play-state: running !important;
 }
 
@@ -650,14 +650,17 @@ p {
     flex: 1;
     overflow: hidden;
     position: relative;
+    border-radius: 16px;
+    margin: 0 8px;
 }
 
 .image img {
     width: 100%;
-    height: 100%;
+    height: 500px;
     object-fit: cover;
     display: block;
     transition: transform var(--transition-slow);
+    border-radius: 16px;
 }
 
 .image:hover img {
