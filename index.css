@@ -682,10 +682,12 @@ p {
 }
 
 /* Testimonials */
-.whoislumefortext h3 {
+.whatwedotext h3 {
     text-align: center;
     margin-bottom: var(--spacing-xl);
     color: var(--color-primary);
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-weight: 700;
 }
 
 .testimonial {
