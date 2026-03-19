@@ -111,6 +111,55 @@
     box-shadow: var(--shadow-md);
 }
 
+.btn-whatsapp {
+    background: #25D366 !important;
+    border-color: #25D366 !important;
+    color: white !important;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-whatsapp::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(37, 211, 102, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(37, 211, 102, 0.2);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background: #128C7E !important;
+    border-color: #128C7E !important;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-whatsapp:hover::before {
+    opacity: 0;
+}
+
+.btn-whatsapp:hover::after {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
 /* =========== ESTILOS DO MODAL =========== */
 .modal-overlay {
     position: fixed;
